@@ -32,3 +32,9 @@ p{
     width:70vw;
     margin: auto;
 }
+
+.carousel .control-dots .dot {
+    width:14px;
+    height:14px;
+    background:blue;
+}
