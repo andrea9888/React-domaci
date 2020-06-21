@@ -1,0 +1,26 @@
+.logo {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+  }
+  
+.ant-layout{
+    height:85vh;
+}
+.ant-form{
+    width:80vw;
+    margin:auto;
+}
+
+.ant-row{
+    width:50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+  .site-layout-background {
+    background: #fff;
+  }
+    [data-theme="dark"] .site-layout-sub-header-background {
+      background: #141414;
+    }
