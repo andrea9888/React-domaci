@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Link, Switch, withRouter} from "react-router-dom";
 import Contact from "./components-dashboard/Contact";
-import Hosting from "./components-dashboard/Hosting";
+import List from "./components-dashboard/List";
 import DashboardDefault from "./components-dashboard/DashboardDefault";
 
 import 'antd/dist/antd.css';
@@ -17,7 +17,6 @@ class Dashboard extends React.Component {
     constructor(props){
         super(props);
         this.props = props;
-        console.log(props);
         this.state = {
 
         }
@@ -32,10 +31,10 @@ class Dashboard extends React.Component {
             breakpoint="lg"
             collapsedWidth="0"
             onBreakpoint={broken => {
-                console.log(broken);
+                //pass;
             }}
             onCollapse={(collapsed, type) => {
-                console.log(collapsed, type);
+                //pass;
             }}
             >
             <div className="logo" />
@@ -47,7 +46,7 @@ class Dashboard extends React.Component {
                     <Link to={`${this.props.location.pathname}/contact`}>Contact</Link>
                 </Menu.Item>
                 <Menu.Item key="3" icon={<CloudServerOutlined />}>
-                    <Link to={`${this.props.location.pathname}/hosting`}>Hosting</Link>
+                    <Link to={`${this.props.location.pathname}/list`}>List</Link>
                 </Menu.Item>
             </Menu>
             </Sider>
@@ -60,7 +59,7 @@ class Dashboard extends React.Component {
                         <Switch>
                             <Route exact path={this.props.location.pathname} component={DashboardDefault} />
                             <Route path={`${this.props.location.pathname}/contact`} component={Contact} />
-                            <Route path={`${this.props.location.pathname}/hosting`} component={Hosting} />
+                            <Route path={`${this.props.location.pathname}/list`} component={List} />
                         </Switch>
                 
                 </div>

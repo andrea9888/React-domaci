@@ -1,0 +1,32 @@
+.card{
+    width: 30vw; 
+    box-shadow: rgba(77, 147, 196, 0) 3px 2px 19px, rgba(77, 147, 196, 0.8) 3px 2px 19px
+}
+
+.card:hover{
+    box-shadow: rgba(77, 147, 196, 0.8) 3px 2px 19px, rgba(77, 147, 196, 0.8) 3px 2px 19px   
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-gap: 30px;
+    margin-top: 40px;
+    height: fit-content;
+}
+
+p{
+    width: 100% !important;
+}
+
+@media screen and (max-width: 600px){
+    .card{
+        width: 60vw;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+    }
+
+}
